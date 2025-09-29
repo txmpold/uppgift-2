@@ -6,52 +6,86 @@ html {
 }
 
 body {
-    background-color: gray;
     margin: 0px;
 }
 
 header {
     padding: 1rem 2rem 1rem 2rem;
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
 }
 
-.navbar {
+.brand-logo {
     display: flex;
-    position: relative;
-    height: 3rem;
-    align-items: center;
     justify-content: flex-start;
+    max-height: 2rem;
+    padding: 0px 1rem 0px 1rem;
 }
 
-nav a {
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 13px;
 }
 
-.brand-logo {
-    max-height: 2rem;
-    padding: 0px 1rem 0px 1rem;
+.nav-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a.icon {
+    padding: 0.3rem;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offcanvas-header img {
+    width: 50vw;
+    height: auto;
+}
+
+.offscreen-items a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .front-page {
     display: block;
 }
 
-.front-page img {
-    width: 100vw;
-    height: 100%;
+.front-page video {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center 45%;
 }
 
 /* PRODUCTS */
 
-
 .product-heading {
     padding: 1rem;
     text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
 }
 
 .product-section {
@@ -76,11 +110,12 @@ nav a {
     justify-content: center;
     align-items: center;
     position: relative;
-    min-width: 17rem;
-    min-height: 11rem;
+    width: 40rem;
+    height: 19rem;
     background-position: center;
     background-size: cover;
-    margin: 1rem;
+    background-repeat: no-repeat;
+    margin: 0.5rem;
     background-size: 100%;
     transition: 0.5s;
 }
@@ -101,18 +136,57 @@ nav a {
     background-image: url(assets/accessories.jpg);
 }
 
-@media (max-width: 1280px) {
+/* Gallery */
+
+
+
+/* Media queries */
+
+@media only screen and (min-width: 1224px) {
     .product-section div:hover {
     background-size: 115%;
-}
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .front-page img {
+        display: none;
+    }
 }
 
-@media (max-width: 600px){
+@media only screen and (max-width: 600px){
+
+    video {
+        display: none;
+    }
+    
     .product-section {
         flex-direction: column;
     }
     .product-section div:active {
         background-size: 115%;
+    }
+    .snowboard-link, .hard-goods-link, .apparel-link, .accessories-link {
+        width: 23rem;
+        height: 17rem;
+        margin: 0px;
+    }
+    nav {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .brand-logo {
+        padding: 0;
+    }
+    header {
+        margin-bottom: 1rem;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
