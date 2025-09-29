@@ -1,0 +1,17 @@
+.product-section {
+  padding: 1rem;
+  text-align: center;
+}
+.product-section .product-heading {
+  text-transform: uppercase;
+}
+.product-section a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: url(assets/snowboards.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=sass-style.css.map */
