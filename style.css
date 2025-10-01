@@ -7,6 +7,7 @@ html {
 
 body {
     margin: 0px;
+    overflow: hidden;
 }
 
 header {
@@ -24,37 +25,19 @@ header {
     padding: 0px 1rem 0px 1rem;
 }
 
-<<<<<<< Updated upstream
 .navigation {
     display: flex;
     justify-content: space-between;
 }
 
 .navigation a {
-=======
-.icon-container {
-    display: block;
-}
-
-.main-nav {
-    display: inline-block;
-}
-
-.main-nav a {
->>>>>>> Stashed changes
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 .nav-icons {
@@ -133,7 +116,7 @@ a.icon {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0.5rem;
+    margin: 0.5rem 2rem 6rem 2rem;
     background-size: 100%;
     transition: 0.5s;
 }
@@ -154,9 +137,40 @@ a.icon {
     background-image: url(assets/accessories.jpg);
 }
 
-/* Gallery */
+/* Catalog */
 
+.catalog {
+    position: relative;
+}
 
+.catalog img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.catalog-heading {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color:  white;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.catalog:hover .catalog-heading {
+    opacity: 1;
+}
+
+.catalog:hover img {
+    filter: blur(3px);
+}
 
 /* Media queries */
 
