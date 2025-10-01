@@ -25,37 +25,19 @@ header {
     padding: 0px 1rem 0px 1rem;
 }
 
-<<<<<<< Updated upstream
 .navigation {
     display: flex;
     justify-content: space-between;
 }
 
 .navigation a {
-=======
-.icon-container {
-    display: block;
-}
-
-.main-nav {
-    display: inline-block;
-}
-
-.main-nav a {
->>>>>>> Stashed changes
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 .nav-icons {
