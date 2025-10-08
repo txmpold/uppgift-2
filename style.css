@@ -91,14 +91,14 @@ a.icon {
 /* PRODUCTS */
 
 .page-headings {
-    padding: 3rem 0rem 3rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
     text-align: center;
     letter-spacing: 0.2rem;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
-    margin: 2rem 25rem 2rem 25rem;
+    margin: 3rem 25rem 1rem 25rem;
 }
 
 .product-section {
@@ -106,7 +106,7 @@ a.icon {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 2rem;
+    padding: 2.5rem 0rem 2rem 0rem;
 }
 
 .product-section a {
