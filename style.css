@@ -369,10 +369,12 @@ a.icon {
     width: 24rem;
 }
 
+/* FOOTER */
 
 footer {
     display: flex;
     justify-content: flex-start;
+    margin-top: 2rem;
 }
 
 .footer-item {
@@ -383,8 +385,15 @@ footer {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.footer-item a {
+.footer-item h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+.footer-item a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 /* Media queries */
