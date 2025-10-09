@@ -365,8 +365,14 @@ a.icon {
     margin-top: 6.8rem;
 }
 
+
 .instagram-section img {
     width: 27rem;
+    transition: 0.2s;
+}
+
+.instagram-section img:hover {
+    filter: brightness(85%);
 }
 
 /* FOOTER */
