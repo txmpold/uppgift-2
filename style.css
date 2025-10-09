@@ -130,7 +130,7 @@ a.icon {
     transition: 0.4s;
 }
 
-.product-item-blur {
+.product-item-filter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ a.icon {
     transition: 0.5s; 
 }
 
-.product-item-blur:hover {
+.product-item-filter:hover {
     backdrop-filter: brightness(75%);
 }
 
@@ -176,36 +176,12 @@ a.icon {
 
 .catalog {
     position: relative;
-    margin: 4rem 0rem 6rem 0rem;
 }
 
 .catalog img {
     width: 100%;
     height: 100%;
     transition: 0.3s;
-}
-
-.catalog-heading {
-    opacity: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    color:  white;
-    font-size: 50px;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.catalog:hover .catalog-heading {
-    opacity: 1;
-}
-
-.catalog:hover img {
-    filter: blur(3px);
 }
 
 /* Gallery */
@@ -365,7 +341,6 @@ a.icon {
     margin-top: 6.8rem;
 }
 
-
 .instagram-section img {
     width: 27rem;
     transition: 0.2s;
@@ -463,15 +438,53 @@ footer {
 /* Media queries */
 
 @media only screen and (min-width: 1224px) {
+
     .product-section div:hover {
-/*     background-size: 115%; */
+
     }
     .mobile-nav {
         display: none;
     }
+
+    input {
+        display: none;
+    }
+
     .front-page img {
         display: none;
     }
+
+    .phone-catalog {
+        display: none;
+    }
+
+    .catalog:hover .catalog-heading {
+        opacity: 1;
+    }
+
+    .catalog:hover img {
+        filter: blur(3px);
+    }
+
+    .catalog {
+        margin: 4rem 0rem 6rem 0rem;
+    }
+
+    .catalog-heading {
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color:  white;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
 }
 
 @media only screen and (max-width: 600px){
@@ -482,15 +495,13 @@ footer {
     
     .product-section {
         flex-direction: column;
+        padding-bottom: 0rem;
     }
-    .product-section div:active {
-        background-size: 115%;
+
+    .product-item-1, .product-item-2, .product-item-3, .product-item-4{
+        margin: 0.1rem 1rem 0.1rem 1rem;
     }
-    .snowboard-link, .hard-goods-link, .apparel-link, .accessories-link {
-        width: 23rem;
-        height: 17rem;
-        margin: 0px;
-    }
+
     nav {
         display: none;
     }
@@ -500,13 +511,76 @@ footer {
     }
 
     .brand-logo {
-        padding: 0;
+        display: none;
     }
+
+    .search {
+        border: none;
+        background-color: white;
+    }
+
+    input {
+        display: none;
+        border: none;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
     header {
         margin-bottom: 1rem;
         padding: 0.8rem 1rem 0.8rem 1rem;
         display: flex;
         justify-content: space-between;
+    }
+
+    .front-page {
+        position: relative;
+    }
+
+    .front-img {
+        position: relative;
+        right: 61rem;
+    }
+
+    .front-logo {
+        position: absolute;
+        top: 10rem;
+        left: 9rem;
+    }
+
+   .page-headings {
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+   }
+
+   .catalog {
+    position: relative;
+    margin-top: 3rem;
+   }
+
+   .catalog-heading {
+    position: absolute;
+    top: 8.2rem;
+    left: 1.8rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    width: 25rem;
+   }
+
+   .desktop-catalog {
+    display: none;
+   }
+
+    .misc svg {
+        display: none;
     }
 }
 
