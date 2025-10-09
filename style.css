@@ -360,13 +360,13 @@ a.icon {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 24rem;
+    height: 25rem;
     overflow: hidden;
     margin-top: 6.8rem;
 }
 
 .instagram-section img {
-    width: 24rem;
+    width: 27rem;
 }
 
 /* FOOTER */
@@ -374,26 +374,84 @@ a.icon {
 footer {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2rem;
+    position: relative;
+    margin: 10rem 2rem 5rem 2rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
-.footer-item {
+.footer-items {
     padding: 2rem;
 }
 
-.footer-item div {
+.footer-items div {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.footer-item h5 {
+.footer-items h5 {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.footer-item a {
+.footer-items a {
+    font-size: 15px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    opacity: 45%;
+    transition: 0.2s;
+}
+
+.footer-items a:hover {
+    opacity: 100%;
+}
+
+.white-space {
+    width: 100%;
+    height: auto;
+    flex-grow: 3;
+}
+
+.animated-link {
+    border: 2px solid black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    min-width: 10rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background-color: black;
+    transition: 0.2s;
+}
+
+.animated-link a {
+    color: white;
+    opacity: 100%;
+}
+
+.animated-link:hover{
+    background-color: white;
+}
+
+.animated-link:hover a {
+    color: black;
+}
+
+.misc {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top: 26.3rem;
+    left: 2rem;
+}
+
+.misc p {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 4rem;
+}
+
+.misc svg {
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 /* Media queries */
