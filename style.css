@@ -29,12 +29,18 @@ header {
     padding: 0rem 1rem 0.2rem 1rem;
 }
 
+.logo-link {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
 }
 
-.navigation a {
+.nav-item {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -55,6 +61,12 @@ header {
 
 a.icon {
     padding: 0rem 0.5rem 0.3rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .mobile-nav {
@@ -439,26 +451,27 @@ footer {
 /* 1 */
 
 .philosophy-item-1 h3 {
-    left: -33rem;
-    top: 17rem;
+    left: -36.5rem;
+    top: 25rem;
     color: white;
     transition: 0.7s;
 }
 
 .philosophy-item-1:hover h3 {
     left: 5rem;
+    top: 18rem;
     color: black;
 }
 
 .philosophy-item-1 p {
     left: 5rem;
-    top: 17rem;
+    top: 19rem;
     opacity: 0;
     transition: 0.3s;
 }
 
 .philosophy-item-1:hover p {
-    top: 18rem;
+    top: 20rem;
     transition-delay: 0.7s;
     opacity: 1;
 }
@@ -466,25 +479,26 @@ footer {
 /* 2 */
 
 .philosophy-item-2 h3 {
-    left: 61.5rem;
-    top: 17rem;
+    left: 70.5rem;
+    top: 25rem;
     color: white;
     transition: 0.7s;
 }
 
 .philosophy-item-2:hover h3 {
     left: 0rem;
+    top: 17rem;
     color: black;
 }
 
 .philosophy-item-2 p {
-    top: 17rem;
+    top: 18rem;
     transition: 0.3s;
     opacity: 0;
 }
 
 .philosophy-item-2:hover p {
-    top: 18rem;
+    top: 19rem;
     transition-delay: 0.7s;
     opacity: 1;
 }
@@ -492,24 +506,25 @@ footer {
 /* 3 */
 
 .philosophy-item-3 h3 {
-    left: -29rem;
-    top: 17rem;
+    left: -32rem;
+    top: 25rem;
     transition: 0.7s;
 }
 
 .philosophy-item-3:hover h3 {
     left: 5rem;
+    top: 17rem;
 }
 
 .philosophy-item-3 p {
     left: 5rem;
-    top: 17rem;
+    top: 18rem;
     opacity: 0;
     transition: 0.3s;
 }
 
 .philosophy-item-3:hover p {
-    top: 18rem;
+    top: 19rem;
     transition-delay: 0.7s;
     opacity: 1;
 }
@@ -517,25 +532,26 @@ footer {
 /* 4 */
 
 .philosophy-item-4 h3 {
-    left: 60rem;
-    top: 17rem;
+    left: 69.5rem;
+    top: 25rem;
     color: white;
     transition: 0.7s;
 }
 
 .philosophy-item-4:hover h3 {
     left: 0rem;
+    top: 17rem;
     color: black;
 }
 
 .philosophy-item-4 p {
-    top: 17rem;
+    top: 18rem;
     transition: 0.3s;
     opacity: 0;
 }
 
 .philosophy-item-4:hover p {
-    top: 18rem;
+    top: 19rem;
     transition-delay: 0.7s;
     opacity: 1;
 }
@@ -543,26 +559,27 @@ footer {
 /* 5 */
 
 .philosophy-item-5 h3 {
-    left: -32rem;
-    top: 17rem;
+    left: -35rem;
+    top: 24.5rem;
     color: white;
     transition: 0.7s;
 }
 
 .philosophy-item-5:hover h3 {
+    top: 15rem;
     left: 5rem;
     color: black;
 }
 
 .philosophy-item-5 p {
     left: 5rem;
-    top: 17rem;
+    top: 16rem;
     opacity: 0;
     transition: 0.3s;
 }
 
 .philosophy-item-5:hover p {
-    top: 18rem;
+    top: 17rem;
     transition-delay: 0.7s;
     opacity: 1;
 }
@@ -571,13 +588,14 @@ footer {
 /* 6 */
 
 .philosophy-item-6 h3 {
-    left: 64.5rem;
-    top: 17rem;
+    left: 74.5rem;
+    top: 25rem;
     color: white;
     transition: 0.7s;
 }
 
 .philosophy-item-6:hover h3 {
+    top: 16rem;
     left: 0rem;
     color: black;
 }
@@ -593,8 +611,6 @@ footer {
     transition-delay: 0.7s;
     opacity: 1;
 }
-
-
 
 .philosophy-item-1, .philosophy-item-2, .philosophy-item-3, .philosophy-item-4, .philosophy-item-5, .philosophy-item-6 {
     display: flex;
