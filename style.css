@@ -358,7 +358,7 @@ footer {
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.footer-items h5 {
+.footer-items h4 {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -368,7 +368,7 @@ footer {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    opacity: 45%;
+    opacity: 75%;
     transition: 0.2s;
 }
 
@@ -747,6 +747,10 @@ footer {
     filter: brightness(50%);
 }
 
+.front-logo {
+    display: none;
+}
+
 }
 
 
@@ -774,25 +778,13 @@ footer {
         display: none;
     }
 
-    .nav-icons {
-        display: none;
+    .nav-icons a {
+        padding: 0rem 0.3rem 0rem 0.3rem;
     }
 
     .brand-logo {
         position: absolute;
         left: 6.7rem;
-    }
-
-    .search {
-        border: none;
-        background-color: white;
-    }
-
-    input {
-        display: none;
-        border: none;
-        border-bottom: 1px solid black;
-        text-align: center;
     }
 
     input:focus {
@@ -801,17 +793,9 @@ footer {
 
     header {
         margin-bottom: 1rem;
-        padding: 0.8rem 1rem 0.8rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         display: flex;
         justify-content: space-between;
-    }
-
-    .search-bar {
-        display: none;
-        position: absolute;
-        left: 7rem;
-        text-align: center;
-        z-index: 2;
     }
 
     .front-page {
@@ -959,6 +943,27 @@ footer {
         margin-top: 0rem;
     }
     
+    .rec-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .rec-items img {
+        width: 100vw;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    .search-container {
+        width: 100vw;
+    }
+
+    .search-container input {
+        width: 24rem;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
 }
 
 
